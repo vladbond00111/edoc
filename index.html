@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css/libs/normalize.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+  <title>EDOC</title>
+</head>
+<body class="container-fluid">
+  <div class="row">
+    <div class="col-lg-4 document-block">
+      <p class="text-center m-1">Document title</p>
+      <object class='document' data="pdf/007.pdf" type="application/pdf">
+        <a href="pdf/007.pdf">click here to download the file.</a>
+      </object>
+    </div>
+    <div class="col-lg-8 form-block">
+      <div class="row">
+        <div class="col-md-5 name-block">
+          <h2>Sign the document</h2>
+          <hr>
+          <p>Provide your credentials that will appear on the document</p>
+          <form  action="URL" method="POST">
+            <input class="form-control" type="text" placeholder="Name">
+            <input class="form-control" type="date" placeholder="Date">
+            <input class="form-control" type="email" placeholder="E-mail">
+          </form>
+        </div>
+        <div class="col-md-7 choose-block">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="col-4 nav-item nav-link active text-center" id="nav-type-tab" data-toggle="tab" href="#nav-type" role="tab" aria-controls="nav-type" aria-selected="true">Type</a>
+              <a class="col-4 nav-item nav-link text-center" id="nav-draw-tab" data-toggle="tab" href="#nav-draw" role="tab" aria-controls="nav-draw" aria-selected="false">Draw</a>
+              <a class="col-4 nav-item nav-link text-center" id="nav-upload-tab" data-toggle="tab" href="#nav-upload" role="tab" aria-controls="nav-upload" aria-selected="false">Upload</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-type" role="tabpanel" aria-labelledby="nav-type-tab">
+              <input id="sign-input" class="form-control w-100" type="text" value="Guest Signer">
+              <div class="row variants-block">
+                <div class="col-6 col-lg-4 sign-variant-wrap">
+                    <div id="sign1" class="sign-variant">Guest Sign</div>
+                </div>
+                <div class="col-6 col-lg-4 sign-variant-wrap">
+                    <div id="sign2" class="sign-variant">Guest Sign</div>
+                </div>
+                <div class="col-6 col-lg-4 sign-variant-wrap">
+                    <div id="sign3" class="sign-variant">Guest Sign</div>
+                </div>
+                <div class="col-6 col-lg-4 sign-variant-wrap">
+                    <div id="sign4" class="sign-variant">Guest Sign</div>
+                </div>
+                <div class="col-6 col-lg-4 sign-variant-wrap">
+                    <div id="sign5" class="sign-variant">Guest Sign</div>
+                </div>
+                <div class="col-6 col-lg-4 sign-variant-wrap">
+                    <div id="sign6" class="sign-variant">Guest Sign</div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-draw" role="tabpanel" aria-labelledby="nav-draw-tab">
+              <canvas id="sign-draw" width="666" height="210"></canvas>
+            </div>
+            <div class="tab-pane fade" id="nav-upload" role="tabpanel" aria-labelledby="nav-upload-tab">
+              <div class="sign-upload w-100">
+                  <input class="btn " type="file" value="">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-primary btn-blue">Sign</button>
+      </div>
+      <h3>Invite others to sign the document</h3>
+      <form id="invite-form"  action="URL" method="POST">
+        <div class="form-group row" >
+          <label class="col-md-2 mb-0 pt-1" for="sign-2-name">Signature 2</label>
+          <div class="col-md-5">
+            <input type="text" class="form-control" id="sign-2-name"  placeholder="Name">
+          </div>
+          <div class="col-md-5">
+            <input type="email" class="form-control" id="sign-2-email col-md-4" placeholder="E-mail">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-md-2 mb-0 pt-1" for="sign-2-name">Signature 3</label>
+          <div class="col-md-5">
+            <input type="text" class="form-control" id="sign-3-name"  placeholder="Name">
+          </div>
+          <div class="col-md-5">
+            <input type="email" class="form-control" id="sign-3-email col-md-4" placeholder="E-mail">
+          </div>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-primary btn-blue">Invite</button>
+        </div>
+        <input type="checkbox" id="each-page" name="each-page">
+        <label for="each-page">Sign each page og the document likewise</label>
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree">Hereby I agree to terms and conditions of service edoc.link</label>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+<style>
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<script src="js/main.js"></script>
+  
+</html>
