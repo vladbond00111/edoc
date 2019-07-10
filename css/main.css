@@ -104,6 +104,17 @@ body {
         border-color: #004494; }
     body .form-block .choose-block input {
       margin-bottom: 20px; }
+    body .form-block .or {
+      font-size: 24px;
+      color: gray;
+      font-weight: bold; }
+    body .form-block .login-block .login-icon {
+      height: 80px;
+      transition: 0.2s; }
+      body .form-block .login-block .login-icon:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
     body .form-block #invite-form label {
       line-height: 32px; }
     body .form-block #invite-form input[type=checkbox] + label {

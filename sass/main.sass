@@ -8,6 +8,7 @@ $dark: #404040
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic,cyrillic-ext,latin-ext')
 @import url('https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap&subset=cyrillic,latin-ext')
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic,latin-ext')
+
 body 
     font-family: Arial,sans-serif
     font-weight: 400
@@ -112,6 +113,19 @@ body
                         border-color: $blue
             input
                 margin-bottom: 20px
+        .or
+            font-size: 24px
+            color: gray
+            font-weight: bold
+        .login-block
+            .login-icon
+                height: 80px
+                transition: 0.2s
+                &:hover
+                    -webkit-transform: scale(1.1)
+                    -ms-transform: scale(1.1)
+                    transform: scale(1.1)
+
         #invite-form
             label
                 line-height: 32px
