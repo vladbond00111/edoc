@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="css/main.css">
   <title>EDOC</title>
 </head>
-<body >
-
+<body class="container-fluid p-0">
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="index.html">
@@ -43,68 +42,9 @@
       </nav>
   </header>
 
-  <main class="container-fluid">
-    <div class="row">
-      <div class="col-lg-4 document-block">
-        <p class="text-center m-1">Document title</p>
-        <object class='document' data="pdf/007.pdf" type="application/pdf">
-          <a href="pdf/007.pdf">click here to download the file.</a>
-        </object>
-      </div>
-      <div class="col-lg-8 form-block">
-        <div class="row mb-3">
-          <div class="col-md-6 name-block">
-            <h4>Login to sign the document</h4>
-            <form  action="URL" method="POST">
-              <input id="login" class="form-control" type="text" placeholder="Login">
-              <input id="password" class="form-control" type="password" placeholder="Password">
-            </form>
-          </div>
-          <div class="col-md-1 d-flex justify-content-center align-items-center or">or</div>
-          <div class="col-md-5 login-block d-flex  align-items-center">
-            <a href="#">
-              <img class="login-icon" src="img/fb.svg" alt="fb">
-            </a>
-            <a href="#">
-              <img class="login-icon" src="img/google.svg" alt="google">
-            </a>          
-          </div>
-        </div>
-        <div class="d-flex justify-content-end">
-          <button class="btn btn-primary btn-blue">Sign</button>
-        </div>
-        <h3>Invite others to sign the document</h3>
-        <form id="invite-form"  action="URL" method="POST">
-          <div class="form-group row" >
-            <label class="col-md-2 mb-0 pt-1" for="sign-2-name">Signature 2</label>
-            <div class="col-md-5">
-              <input type="text" class="form-control mb-2 mb-md-0" id="sign-2-name"  placeholder="Name">
-            </div>
-            <div class="col-md-5">
-              <input type="email" class="form-control" id="sign-2-email col-md-4" placeholder="E-mail">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="col-md-2 mb-0 pt-1" for="sign-2-name">Signature 3</label>
-            <div class="col-md-5">
-              <input type="text" class="form-control mb-2 mb-md-0" id="sign-3-name"  placeholder="Name">
-            </div>
-            <div class="col-md-5">
-              <input type="email" class="form-control" id="sign-3-email" placeholder="E-mail">
-            </div>
-          </div>
-          <div class="d-flex justify-content-end">
-            <input type="submit" class="btn btn-primary btn-blue" value="Invite">
-          </div>
-          <input type="checkbox" id="each-page" name="each-page">
-          <label for="each-page">Sign each page og the document likewise</label>
-          <input type="checkbox" id="agree" name="agree">
-          <label for="agree">Hereby I agree to terms and conditions of service edoc.link</label>
-        </form>
-      </div>
-    </div>
+  <main>
+      
   </main>
-  
 
   <footer>
     <div class="row">
