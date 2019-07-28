@@ -58,9 +58,15 @@ body {
         background-color: #F5F5F5; }
     body .form-block .choose-block #nav-type .sign-variant-wrap {
       padding: 0 5px; }
+      body .form-block .choose-block #nav-type .sign-variant-wrap input[type="radio"]:checked + label {
+        border: 1px solid #004494;
+        background-color: #F5F5F5; }
+      body .form-block .choose-block #nav-type .sign-variant-wrap input {
+        display: none; }
       body .form-block .choose-block #nav-type .sign-variant-wrap .sign-variant {
         padding: 5px;
         border: 1px solid #ced4da;
+        height: 45px;
         font-size: 20px;
         background-color: #ffffff;
         display: flex;
@@ -69,8 +75,7 @@ body {
         cursor: pointer;
         margin-bottom: 10px; }
         body .form-block .choose-block #nav-type .sign-variant-wrap .sign-variant:hover {
-          border: 1px solid #004494;
-          background-color: #F5F5F5; }
+          border: 1px solid #004494; }
       body .form-block .choose-block #nav-type .sign-variant-wrap #sign1 {
         font-family: "Pacifico", cursive; }
       body .form-block .choose-block #nav-type .sign-variant-wrap #sign2 {

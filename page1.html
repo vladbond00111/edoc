@@ -71,29 +71,35 @@
               </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-type" role="tabpanel" aria-labelledby="nav-type-tab">
-                <input id="sign-input" class="form-control w-100" type="text" value="Guest Signer">
+              <form id="nav-type" class="tab-pane fade show active"  role="tabpanel" aria-labelledby="nav-type-tab" method="POST" >
+                <input id="sign-input" class="form-control w-100" type="text" value="Your Sign">
                 <div class="row variants-block">
                   <div class="col-6 col-lg-4 sign-variant-wrap">
-                      <div id="sign1" class="sign-variant">Guest Sign</div>
+                      <input type="radio" id="sign1-radio" name="radio-group">
+                      <label id="sign1" class="sign-variant" for="sign1-radio">Your Sign</label>
                   </div>
                   <div class="col-6 col-lg-4 sign-variant-wrap">
-                      <div id="sign2" class="sign-variant">Guest Sign</div>
+                      <input type="radio" id="sign2-radio" name="radio-group">
+                      <label id="sign2" class="sign-variant" for="sign2-radio">Your Sign</label>
                   </div>
                   <div class="col-6 col-lg-4 sign-variant-wrap">
-                      <div id="sign3" class="sign-variant">Guest Sign</div>
+                      <input type="radio" id="sign3-radio" name="radio-group">
+                      <label id="sign3" class="sign-variant" for="sign3-radio">Your Sign</label>
                   </div>
                   <div class="col-6 col-lg-4 sign-variant-wrap">
-                      <div id="sign4" class="sign-variant">Guest Sign</div>
+                      <input type="radio" id="sign4-radio" name="radio-group">
+                      <label id="sign4" class="sign-variant" for="sign4-radio">Your Sign</label>
                   </div>
                   <div class="col-6 col-lg-4 sign-variant-wrap">
-                      <div id="sign5" class="sign-variant">Guest Sign</div>
+                      <input type="radio" id="sign5-radio" name="radio-group">
+                      <label id="sign5" class="sign-variant" for="sign5-radio">Your Sign</label>
                   </div>
                   <div class="col-6 col-lg-4 sign-variant-wrap">
-                      <div id="sign6" class="sign-variant">Guest Sign</div>
+                      <input type="radio" id="sign6-radio" name="radio-group">
+                      <label id="sign6" class="sign-variant" for="sign6-radio">Your Sign</label>
                   </div>
                 </div>
-              </div>
+              </form>
               <div class="tab-pane fade" id="nav-draw" role="tabpanel" aria-labelledby="nav-draw-tab">
                 <canvas id="sign-draw" width="666" height="210"></canvas>
               </div>
@@ -196,7 +202,7 @@
             <input type="text" id="contact-form-name" class="form-control mb-2" placeholder="Name">
             <input type="email" id="contact-form-email" class="form-control mb-2" placeholder="E-mail">
             <textarea id="contact-form-messaage" class="form-control mb-2" rows="3" placeholder="Your message"></textarea>
-            <input type="submit" class="btn btn-primary btn-blue" value="Subscribe">        
+            <input type="submit" class="btn btn-primary btn-blue" value="Send">        
           </form>
       </div>
     </div>
